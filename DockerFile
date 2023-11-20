@@ -11,5 +11,5 @@ RUN pip install -r requirements.txt
 
 EXPOSE 5000
 
-# run the application: flask --app .\app\__init__.py run --reload --port 8080
+# run the application: flask --app .\app\main.py run --reload --port 8080
 CMD ["flask", "--app", "app.__init__", "run", "--reload"]
