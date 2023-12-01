@@ -106,6 +106,32 @@ Features:
 
 ## Backend Configuration ⚙
 
+1. Navigate to ```"\backend"```:
+
+        D:\DigitalBookHub> cd backend
+        D:\DigitalBookHub\backend>
+
+2. Create new virtual environment called ```"venv"```:
+
+        D:\DigitalBookHub\backend> virtualenv venv
+
+3. Log in to the virtual environment:
+
+         D:\DigitalBookHub\backend> .\venv\Scripts\activate
+         (venv) D:\DigitalBookHub\backend> 
+
+4. Install all the requirements required to run the backend:
+
+        (venv) D:\DigitalBookHub\backend> pip install -r requirements.txt
+
+5. Run the backend (<b>Note:</b> Make sure ```step 3``` in in ```Frontend Configuration``` is completed ⚠️):
+
+        (venv) D:\DigitalBookHub\backend> uvicorn main:app --reload
+        INFO: Will watch for changes in these directories: ['D:\DigitalBookHub\backend']
+        INFO: Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+
+
+
 ## Run via Docker
 
 1. Build the Docker image:
