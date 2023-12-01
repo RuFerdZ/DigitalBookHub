@@ -1,5 +1,17 @@
 # 📕 DigitalBookHub 
 
+> Done as a part of AML 1204: Python Programming In Canada @ Lambton College -  Group project
+
+This is the repository which holds the code for the DigitalBookHub, a CRUD application for a public digital e-library system.
+
+![Web application user interface](/assets/UI.png)
+
+
+Features:
+
+- Users can search, view and download books.
+- Registered users can upload books.
+
 ## Team Members 🧑🏻‍🤝‍🧑🏼
 
 ## Pre-requisites 🛠
