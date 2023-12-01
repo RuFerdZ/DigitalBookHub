@@ -1,5 +1,17 @@
 # 📕 DigitalBookHub 
 
+> Done as a part of AML 1204: Python Programming In Canada @ Lambton College -  Group project
+
+This is the repository which holds the code for the DigitalBookHub, a CRUD application for a public digital e-library system.
+
+![Web application user interface](/assets/UI.png)
+
+
+Features:
+
+- Users can search, view and download books.
+- Registered users can upload books.
+
 ## Team Members 🧑🏻‍🤝‍🧑🏼
 
 ## Pre-requisites 🛠
@@ -94,6 +106,70 @@
 
 ## Backend Configuration ⚙
 
+1. Navigate to ```"\backend"```:
+
+        D:\DigitalBookHub> cd backend
+        D:\DigitalBookHub\backend>
+
+2. Create new virtual environment called ```"venv"```:
+
+        D:\DigitalBookHub\backend> virtualenv venv
+
+3. Log in to the virtual environment:
+
+         D:\DigitalBookHub\backend> .\venv\Scripts\activate
+         (venv) D:\DigitalBookHub\backend> 
+
+4. Install all the requirements required to run the backend:
+
+        (venv) D:\DigitalBookHub\backend> pip install -r requirements.txt
+
+5. Run the backend (<b>Note:</b> Make sure ```step 3``` in in ```Frontend Configuration``` is completed ⚠️):
+
+        (venv) D:\DigitalBookHub\backend> uvicorn main:app --reload
+        INFO: Will watch for changes in these directories: ['D:\DigitalBookHub\backend']
+        INFO: Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+
+
+
 ## Run via Docker
 
+1. Build the Docker image:
+
+        D:\DigitalBookHub> docker build -t digitalbookhub-image .
+
+2. View the built docker image:
+
+        D:\DigitalBookHub> docker image ls
+        REPOSITORY             TAG       IMAGE ID       CREATED         SIZE
+        digitalbookhub-image   latest    f9ef80828781   2 minutes ago   122MB
+        D:\DigitalBookHub>
+
+
+3. Run the docker image in detached mode:
+
+        D:\DigitalBookHub> docker run -d -p 8000:8000  --name digitalbookhub digitalbookhub-image
+        97383644a834c7121ef9a827a345bb5ebafd6f6adb4e71232d13b45fd0456a66
+        D:\DigitalBookHub>
+
+4. Confirm the container is running:
+        
+        D:\DigitalBookHub> docker ps
+        CONTAINER ID   IMAGE                  COMMAND                  CREATED          STATUS          PORTS                    NAMES
+        97383644a834   digitalbookhub-image   "uvicorn main:app --…"   55 seconds ago   Up 54 seconds   0.0.0.0:8000->8000/tcp   digitalbookhub
+        D:\DigitalBookHub>
+
+    The container status should be ```"up"```.
+
+
+5. Access via the browser:
+
+    - http://localhost:8000/
+
+
 ## Resources 🌐
+- [FastAPI Documentation](https://fastapi.tiangolo.com/learn/)
+- [ReactJS Documentation](https://react.dev/blog/2023/03/16/introducing-react-dev)
+- [Fast API Github Projects](https://github.com/topics/fastapi-crud-app)
+- [Building A Simple CRUD Application With FastAPI @ Ben Gorman](https://www.gormanalysis.com/blog/building-a-simple-crud-application-with-fastapi/)
+- [W3Schools](https://www.w3schools.com/)
