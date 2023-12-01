@@ -108,6 +108,39 @@ Features:
 
 ## Run via Docker
 
+1. Build the Docker image:
+
+        D:\DigitalBookHub> docker build -t digitalbookhub-image .
+
+2. View the built docker image:
+
+        D:\DigitalBookHub> docker image ls
+        REPOSITORY             TAG       IMAGE ID       CREATED         SIZE
+        digitalbookhub-image   latest    f9ef80828781   2 minutes ago   122MB
+        D:\DigitalBookHub>
+
+
+3. Run the docker image in detached mode:
+
+        D:\DigitalBookHub> docker run -d -p 8000:8000  --name digitalbookhub digitalbookhub-image
+        97383644a834c7121ef9a827a345bb5ebafd6f6adb4e71232d13b45fd0456a66
+        D:\DigitalBookHub>
+
+4. Confirm the container is running:
+        
+        D:\DigitalBookHub> docker ps
+        CONTAINER ID   IMAGE                  COMMAND                  CREATED          STATUS          PORTS                    NAMES
+        97383644a834   digitalbookhub-image   "uvicorn main:app --…"   55 seconds ago   Up 54 seconds   0.0.0.0:8000->8000/tcp   digitalbookhub
+        D:\DigitalBookHub>
+
+    The container status should be ```"up"```.
+
+
+5. Access via the browser:
+
+    - http://localhost:8000/
+
+
 ## Resources 🌐
 - [FastAPI Documentation](https://fastapi.tiangolo.com/learn/)
 - [ReactJS Documentation](https://react.dev/blog/2023/03/16/introducing-react-dev)
