@@ -132,7 +132,7 @@ Features:
 
 
 
-## Run via Docker
+## Run via Docker 🐳
 
 1. Build the Docker image:
 
