@@ -97,3 +97,8 @@
 ## Run via Docker
 
 ## Resources 🌐
+- [FastAPI Documentation](https://fastapi.tiangolo.com/learn/)
+- [ReactJS Documentation](https://react.dev/blog/2023/03/16/introducing-react-dev)
+- [Fast API Github Projects](https://github.com/topics/fastapi-crud-app)
+- [Building A Simple CRUD Application With FastAPI @ Ben Gorman](https://www.gormanalysis.com/blog/building-a-simple-crud-application-with-fastapi/)
+- [W3Schools](https://www.w3schools.com/)
