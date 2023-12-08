@@ -14,11 +14,46 @@ Features:
 
 ## Team Members 🧑🏻‍🤝‍🧑🏼
 
+- C0904675 - [Yolimar Rios](https://github.com/yolimar01)
+- C0908671 - [Chris Mary Bulatao](https://github.com/ChrisMary-Bulatao)
+- C0903980 - [Vihangi Kolamunna](https://github.com/vihangihk)
+- C0906287 - [William Binitie](https://github.com/Jaimewill0511)
+- C0918066 - [Galgamuge Emmanuel Fernando](https://github.com/RuFerdZ)
+
 ## Pre-requisites 🛠
+
+- [Node JS](https://nodejs.org/en/) stable version.
+- [python 3.x](https://www.python.org/downloads/) and configure path.
+- [virtualenv](https://pypi.org/project/virtualenv/) python library
+- [PostgresSQL](https://www.postgresql.org/download/windows/) v11.x.
+- [PostGis](https://postgis.net/documentation/getting_started/) extension.
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) (Optional - only if running via docker).
 
 ## URLs
 
+- Access the web application: ```http://localhost:8000```
+- Access Swagger documentation for the API: ```http://localhost:8000/docs```
+
 ## Frontend Configuration 🖼
+
+1) Navigate to ```"\webapp"```:
+
+        D:\DigitalBookHub> cd webapp
+        D:\DigitalBookHub\webapp>
+
+2) Run the below command to install the required node modules for the web application:
+
+        D:\DigitalBookHub\webapp> npm install
+
+3) Build the project (<b>Note:</b> If this step is skipped, backend would fail ⚠️)
+
+         D:\DigitalBookHub\webapp> npm run build
+
+4) Once the node modules are installed, run the below command to start the web application:
+
+        D:\DigitalBookHub\webapp> npm start
+
+5) The web application will be servered via ```"http://localhost:3000"```
 
 ## Database Configuration 🗃
 
