@@ -1,1 +1,0 @@
-# Database settings and environment settings goes here
