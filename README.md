@@ -33,6 +33,7 @@ Features:
 
 - Access the web application: ```http://localhost:8000```
 - Access the admin dashboard: ```http://localhost:8000/admin```
+- Postman collection: [Collection](https://elements.getpostman.com/redirect?entityId=9209211-6116f7ed-2c3f-41a5-baef-569e9fd62799&entityType=collection)
 
 ## Frontend Configuration 🖼
 
