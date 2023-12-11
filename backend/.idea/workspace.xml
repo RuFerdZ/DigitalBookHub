@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="62af942e-a6dc-4ae9-8d59-f473fe2aab8c" name="Changes" comment="renamed file upload">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2ZMrKMC4TXqPHAnKeiEjzrEdqIv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "fix/file-storage",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="backend" type="Python.DjangoServer" factoryName="Django server">
+      <module name="backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62af942e-a6dc-4ae9-8d59-f473fe2aab8c" name="Changes" comment="" />
+      <created>1702242727119</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702242727119</updated>
+      <workItem from="1702242731588" duration="16354000" />
+      <workItem from="1702279238522" duration="5788000" />
+    </task>
+    <task id="LOCAL-00001" summary="added category, author and book models">
+      <option name="closed" value="true" />
+      <created>1702265357837</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702265357837</updated>
+    </task>
+    <task id="LOCAL-00002" summary="registered the category, author and book models">
+      <option name="closed" value="true" />
+      <created>1702265370416</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702265370416</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added comments to book.models">
+      <option name="closed" value="true" />
+      <created>1702265447612</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702265447612</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added migrations">
+      <option name="closed" value="true" />
+      <created>1702265457334</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702265457334</updated>
+    </task>
+    <task id="LOCAL-00005" summary="autogenerate id">
+      <option name="closed" value="true" />
+      <created>1702277144953</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702277144953</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fixed foreign keys">
+      <option name="closed" value="true" />
+      <created>1702277157153</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702277157153</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added read-only fields to admin">
+      <option name="closed" value="true" />
+      <created>1702277177011</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702277177011</updated>
+    </task>
+    <task id="LOCAL-00008" summary="updated user serializers to show uploaded books">
+      <option name="closed" value="true" />
+      <created>1702277200269</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702277200269</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added django filters">
+      <option name="closed" value="true" />
+      <created>1702277211305</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1702277211305</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added books urls">
+      <option name="closed" value="true" />
+      <created>1702277218236</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702277218236</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added book serializer">
+      <option name="closed" value="true" />
+      <created>1702277250672</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702277250672</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added book viewsets and searching + filtering">
+      <option name="closed" value="true" />
+      <created>1702277260923</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702277260923</updated>
+    </task>
+    <task id="LOCAL-00013" summary="added book permissions">
+      <option name="closed" value="true" />
+      <created>1702277268829</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702277268829</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added router for books">
+      <option name="closed" value="true" />
+      <created>1702277277035</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1702277277035</updated>
+    </task>
+    <task id="LOCAL-00015" summary="updated migrations">
+      <option name="closed" value="true" />
+      <created>1702277286767</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1702277286767</updated>
+    </task>
+    <task id="LOCAL-00016" summary="renamed file upload">
+      <option name="closed" value="true" />
+      <created>1702282070939</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1702282070939</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added category, author and book models" />
+    <MESSAGE value="registered the category, author and book models" />
+    <MESSAGE value="added comments to book.models" />
+    <MESSAGE value="added migrations" />
+    <MESSAGE value="autogenerate id" />
+    <MESSAGE value="fixed foreign keys" />
+    <MESSAGE value="added read-only fields to admin" />
+    <MESSAGE value="updated user serializers to show uploaded books" />
+    <MESSAGE value="added django filters" />
+    <MESSAGE value="added books urls" />
+    <MESSAGE value="added book serializer" />
+    <MESSAGE value="added book viewsets and searching + filtering" />
+    <MESSAGE value="added book permissions" />
+    <MESSAGE value="added router for books" />
+    <MESSAGE value="updated migrations" />
+    <MESSAGE value="renamed file upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed file upload" />
+  </component>
+</project>
