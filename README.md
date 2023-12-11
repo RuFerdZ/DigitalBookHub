@@ -32,6 +32,7 @@ Features:
 ## URLs
 
 - Access the web application: ```http://localhost:8000```
+- Access the admin dashboard: ```http://localhost:8000/admin```
 
 ## Frontend Configuration 🖼
 
@@ -212,8 +213,7 @@ Features:
 
 
 ## Resources 🌐
-- [FastAPI Documentation](https://fastapi.tiangolo.com/learn/)
+- [Django Rest Framework Documentation](https://www.django-rest-framework.org/tutorial/quickstart/)
 - [ReactJS Documentation](https://react.dev/blog/2023/03/16/introducing-react-dev)
-- [Fast API Github Projects](https://github.com/topics/fastapi-crud-app)
-- [Building A Simple CRUD Application With FastAPI @ Ben Gorman](https://www.gormanalysis.com/blog/building-a-simple-crud-application-with-fastapi/)
+- [DRF Github Projects](https://github.com/RealmTeam/django-rest-framework-social-oauth2)
 - [W3Schools](https://www.w3schools.com/)
