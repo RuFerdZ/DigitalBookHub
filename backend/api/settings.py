@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'social_django',
     'rest_framework_social_oauth2',
     'django_filters',
+    'drf_yasg',
     'users',
     'books',
 ]
