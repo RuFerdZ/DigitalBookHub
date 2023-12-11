@@ -1,8 +1,10 @@
 from rest_framework import routers
-from .viewsets import BookViewSet
+from .viewsets import BookViewSet, AuthorViewSet, CategoryViewSet
 
 app_name = 'books'
 
 router = routers.DefaultRouter()
 
-router.register(r'', BookViewSet)
+router.register(r'book', BookViewSet, basename='book')
+router.register(r'author', AuthorViewSet, basename='author')
+router.register(r'category', CategoryViewSet, basename='category')
