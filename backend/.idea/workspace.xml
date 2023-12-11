@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62af942e-a6dc-4ae9-8d59-f473fe2aab8c" name="Changes" comment="updated migrations">
+    <list default="true" id="62af942e-a6dc-4ae9-8d59-f473fe2aab8c" name="Changes" comment="renamed file upload">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/router.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/router.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/viewsets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "feat/books",
+    "git-widget-placeholder": "fix/file-storage",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,6 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1702242727119</updated>
       <workItem from="1702242731588" duration="16354000" />
+      <workItem from="1702279238522" duration="5788000" />
     </task>
     <task id="LOCAL-00001" summary="added category, author and book models">
       <option name="closed" value="true" />
@@ -201,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702277286767</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="renamed file upload">
+      <option name="closed" value="true" />
+      <created>1702282070939</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1702282070939</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +234,7 @@
     <MESSAGE value="added book permissions" />
     <MESSAGE value="added router for books" />
     <MESSAGE value="updated migrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated migrations" />
+    <MESSAGE value="renamed file upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed file upload" />
   </component>
 </project>
