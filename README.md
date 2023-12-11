@@ -32,7 +32,8 @@ Features:
 ## URLs
 
 - Access the web application: ```http://localhost:8000```
-- Access Swagger documentation for the API: ```http://localhost:8000/docs```
+- Access the admin dashboard: ```http://localhost:8000/admin```
+- Postman collection: [Collection](https://elements.getpostman.com/redirect?entityId=9209211-6116f7ed-2c3f-41a5-baef-569e9fd62799&entityType=collection)
 
 ## Frontend Configuration 🖼
 
@@ -45,7 +46,7 @@ Features:
 
         D:\DigitalBookHub\webapp> npm install
 
-3) Build the project (<b>Note:</b> If this step is skipped, backend would fail ⚠️)
+3) Build the project:
 
          D:\DigitalBookHub\webapp> npm run build
 
@@ -159,11 +160,21 @@ Features:
 
         (venv) D:\DigitalBookHub\backend> pip install -r requirements.txt
 
-5. Run the backend (<b>Note:</b> Make sure ```step 3``` in in ```Frontend Configuration``` is completed ⚠️):
+5. Run the backend:
 
-        (venv) D:\DigitalBookHub\backend> uvicorn main:app --reload
-        INFO: Will watch for changes in these directories: ['D:\DigitalBookHub\backend']
-        INFO: Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+        (venv) D:\DigitalBookHub\backend> python manage.py runserver
+        Watching for file changes with StatReloader
+        Performing system checks...
+
+        System check identified no issues (0 silenced).
+
+        You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+        Run 'python manage.py migrate' to apply them.
+        December 10, 2023 - 02:00:33
+        Django version 5.0, using settings 'backend.settings'
+        Starting development server at http://127.0.0.1:8000/
+        Quit the server with CTRL-BREAK.
+
 
 
 
@@ -203,8 +214,7 @@ Features:
 
 
 ## Resources 🌐
-- [FastAPI Documentation](https://fastapi.tiangolo.com/learn/)
+- [Django Rest Framework Documentation](https://www.django-rest-framework.org/tutorial/quickstart/)
 - [ReactJS Documentation](https://react.dev/blog/2023/03/16/introducing-react-dev)
-- [Fast API Github Projects](https://github.com/topics/fastapi-crud-app)
-- [Building A Simple CRUD Application With FastAPI @ Ben Gorman](https://www.gormanalysis.com/blog/building-a-simple-crud-application-with-fastapi/)
+- [DRF Github Projects](https://github.com/RealmTeam/django-rest-framework-social-oauth2)
 - [W3Schools](https://www.w3schools.com/)
