@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 from users import router as user_api_router
+from books import router as book_api_router
 
 auth_urlpatterns = [
     path(r'', include('rest_framework_social_oauth2.urls')),
@@ -29,6 +30,7 @@ if settings.DEBUG:
 api_urlpatterns = [
     path(r'auth/', include(auth_urlpatterns)),
     path(r'accounts/', include(user_api_router.router.urls)),
+    path(r'books/', include(book_api_router.router.urls)),
 ]
 
 urlpatterns = [
