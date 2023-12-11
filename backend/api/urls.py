@@ -23,6 +23,7 @@ from drf_yasg.views import get_schema_view as swagger_get_schema_view
 from users import router as user_api_router
 from books import router as book_api_router
 
+# OpenAPI documentation configuration
 schema_view = swagger_get_schema_view(
     openapi.Info(
         title="DigitalBookHub API",
@@ -32,6 +33,7 @@ schema_view = swagger_get_schema_view(
     public=True
 )
 
+# this is the url for the oauth2 authentication and authorization
 auth_urlpatterns = [
     path(r'', include('rest_framework_social_oauth2.urls')),
 ]
@@ -39,19 +41,23 @@ auth_urlpatterns = [
 if settings.DEBUG:
     auth_urlpatterns.append(path(r'verify/', include('rest_framework.urls')))
 
+# these are the endpoints of the api directory
 api_urlpatterns = [
     path(r'auth/', include(auth_urlpatterns)),
     path(r'accounts/', include(user_api_router.router.urls)),
     path(r'books/', include(book_api_router.router.urls)),
 ]
 
+# these are the root urls of the project
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(api_urlpatterns)),
 ]
 
+# these are the urls for the media files
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+# documentation urls
 urlpatterns += [
     path(r'api/v1/swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path(r'api/v1/redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
