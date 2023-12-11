@@ -17,7 +17,7 @@ class GenerateBookImagePath(object):
 
     def __call__(self, instance, filename):
         extension = filename.split('.')[-1]
-        file_path = f'media/books/{instance.title}.{extension}'
+        file_path = f'books/{instance.title}-{instance.id}.{extension}'
         return os.path.join(file_path)
 
 
@@ -58,7 +58,7 @@ class Book(models.Model):
     published_date = models.DateField()
     publisher = models.CharField(max_length=100)
     language = models.CharField(max_length=50)
-    location_url = models.FileField(upload_to=book_location_path, null=True, blank=True)
+    file = models.FileField(upload_to=book_location_path, null=True, blank=True)
     uploaded_date = models.DateTimeField(auto_now_add=True)
     uploader = models.ForeignKey('users.Profile', on_delete=models.SET_NULL, null=True, blank=True, related_name='books')
     category = models.ForeignKey('books.Category', on_delete=models.SET_NULL, null=True, blank=True, related_name='books')
