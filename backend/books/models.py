@@ -25,6 +25,7 @@ book_image_path = GenerateBookImagePath()
 class Category(models.Model):
     category_name = models.CharField(max_length=50)
 
+    # to add custom plural name in admin panel
     class Meta:
         verbose_name = 'Category'
         verbose_name_plural = 'Categories'
