@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62af942e-a6dc-4ae9-8d59-f473fe2aab8c" name="Changes" comment="renamed file upload">
+    <list default="true" id="62af942e-a6dc-4ae9-8d59-f473fe2aab8c" name="Changes" comment="implemented swagger endpoints">
+      <change beforePath="$PROJECT_DIR$/.idea/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +41,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "fix/file-storage",
+    "git-widget-placeholder": "fix/swagger",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -212,7 +213,31 @@
       <option name="project" value="LOCAL" />
       <updated>1702282070939</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added drf_yasg module">
+      <option name="closed" value="true" />
+      <created>1702316799943</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1702316799943</updated>
+    </task>
+    <task id="LOCAL-00018" summary="added drf_yasg module">
+      <option name="closed" value="true" />
+      <created>1702316805242</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1702316805242</updated>
+    </task>
+    <task id="LOCAL-00019" summary="implemented swagger endpoints">
+      <option name="closed" value="true" />
+      <created>1702316817813</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1702316817813</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +260,8 @@
     <MESSAGE value="added router for books" />
     <MESSAGE value="updated migrations" />
     <MESSAGE value="renamed file upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="renamed file upload" />
+    <MESSAGE value="added drf_yasg module" />
+    <MESSAGE value="implemented swagger endpoints" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented swagger endpoints" />
   </component>
 </project>
