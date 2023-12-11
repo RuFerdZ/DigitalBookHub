@@ -15,7 +15,7 @@ class GenerateAvatarPath(object):
 
     def __call__(self, instance, filename):
         extension = filename.split('.')[-1]
-        path = f'media/avatars/{instance.user.username}.{extension}'
+        path = f'avatars/{instance.user.username}.{extension}'
         return os.path.join(path)
 
 

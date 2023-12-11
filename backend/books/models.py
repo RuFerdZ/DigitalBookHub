@@ -17,7 +17,7 @@ class GenerateBookImagePath(object):
 
     def __call__(self, instance, filename):
         extension = filename.split('.')[-1]
-        file_path = f'media/books/{instance.title}.{extension}'
+        file_path = f'books/{instance.title}-{instance.id}.{extension}'
         return os.path.join(file_path)
 
 
