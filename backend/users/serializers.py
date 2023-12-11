@@ -6,10 +6,11 @@ from .models import Profile
 class ProfileSerializer(serializers.ModelSerializer):
 
     user = serializers.HyperlinkedRelatedField(read_only=True, many=False, view_name='user-detail')
+    books = serializers.HyperlinkedRelatedField(read_only=True, many=True, view_name='book-detail')
 
     class Meta:
         model = Profile
-        fields = ['url', 'id', 'user', 'avatar']
+        fields = ['url', 'id', 'user', 'avatar', 'books']
 
 
 class UserSerializer(serializers.ModelSerializer):
