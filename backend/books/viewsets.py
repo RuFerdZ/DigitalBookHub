@@ -7,12 +7,12 @@ from .models import Category, Author, Book
 
 
 # model view set provides CRUD functionality for the User model by default
-class CategoryViewSet(viewsets.GenericViewSet, mixins.RetrieveModelMixin):
+class CategoryViewSet(viewsets.GenericViewSet, mixins.RetrieveModelMixin, mixins.ListModelMixin):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
 
 
-class AuthorViewSet(viewsets.GenericViewSet, mixins.RetrieveModelMixin):
+class AuthorViewSet(viewsets.GenericViewSet, mixins.RetrieveModelMixin, mixins.ListModelMixin, mixins.CreateModelMixin):
     queryset = Author.objects.all()
     serializer_class = AuthorSerializer
 
