@@ -23,7 +23,7 @@ class BookViewSet(viewsets.ModelViewSet):
     permission_classes = [IsBookUploader]
     filter_backends = [filters.SearchFilter, DjangoFilterBackend]
     search_fields = ['title', 'isbn', 'publisher', 'language']
-    filterset_fields = ['category', 'author', 'uploader']
+    filterset_fields = ['category', 'author_name', 'uploader']
 
 
 

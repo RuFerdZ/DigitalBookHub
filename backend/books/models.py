@@ -67,6 +67,7 @@ class Book(models.Model):
     category = models.ForeignKey('books.Category', on_delete=models.SET_NULL, null=True, blank=True,
                                  related_name='books')
     author = models.ForeignKey('books.Author', on_delete=models.CASCADE, related_name='books')
+    author_name = models.CharField(max_length=100, null=False, default='N/A')
 
     def __str__(self):
         return self.title + " - " + self.author.name
