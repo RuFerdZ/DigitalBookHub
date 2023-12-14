@@ -55,7 +55,7 @@ class Book(models.Model):
     title = models.CharField(max_length=100)
     no_of_pages = models.IntegerField()
     image = models.FileField(upload_to=book_image_path, null=True, blank=True)
-    isbn = models.CharField(max_length=13)
+    isbn = models.CharField(max_length=13, unique=True)
     description = models.TextField()
     published_date = models.DateField()
     publisher = models.CharField(max_length=100)
