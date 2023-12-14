@@ -20,6 +20,14 @@ class BookSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         book = Book.objects.create(**validated_data)
         book.uploader = self.context['request'].user.profile
+        author = self.context['request'].data.get('author_name')
+        # check if author name is present on the Author object.name
+        if Author.objects.filter(name=author).exists():
+            book.author = Author.objects.get(name=author)
+        else:
+            # if author name is not present then create a new author object
+            new_author = Author.objects.create(name=author)
+            book.author = new_author
         book.save()
         return book
 
