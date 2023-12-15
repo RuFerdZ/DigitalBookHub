@@ -22,6 +22,7 @@ class GenerateAvatarPath(object):
 avatar_path = GenerateAvatarPath()
 
 
+# Profile model is the user who can upload the books
 class Profile(models.Model):
     id = models.BigAutoField(primary_key=True)
     user = models.OneToOneField(User, on_delete=models.CASCADE)  # delete profile if user is deleted

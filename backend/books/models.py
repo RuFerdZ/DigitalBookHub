@@ -9,7 +9,7 @@ import uuid
 @deconstructible
 class GenerateBookImagePath(object):
     """
-        This class is used to generate the avatar path for the user
+        This class is used to generate the book image path and book document path
     """
 
     def __int__(self, path):
@@ -25,7 +25,7 @@ book_image_path = GenerateBookImagePath()
 book_location_path = GenerateBookImagePath()
 
 
-# enum for category
+# stores different categories of books
 class Category(models.Model):
     id = models.BigAutoField(primary_key=True)
     category_name = models.CharField(max_length=50, unique=True)
@@ -39,6 +39,7 @@ class Category(models.Model):
         return self.category_name
 
 
+# stores different authors of books
 class Author(models.Model):
     id = models.BigAutoField(primary_key=True)
     name = models.CharField(max_length=100, unique=True)
@@ -48,21 +49,25 @@ class Author(models.Model):
         return self.name
 
 
+# stores the books
 class Book(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     title = models.CharField(max_length=100)
     no_of_pages = models.IntegerField()
     image = models.FileField(upload_to=book_image_path, null=True, blank=True)
-    isbn = models.CharField(max_length=13)
+    isbn = models.CharField(max_length=13, unique=True)
     description = models.TextField()
     published_date = models.DateField()
     publisher = models.CharField(max_length=100)
     language = models.CharField(max_length=50)
     file = models.FileField(upload_to=book_location_path, null=True, blank=True)
     uploaded_date = models.DateTimeField(auto_now_add=True)
-    uploader = models.ForeignKey('users.Profile', on_delete=models.SET_NULL, null=True, blank=True, related_name='books')
-    category = models.ForeignKey('books.Category', on_delete=models.SET_NULL, null=True, blank=True, related_name='books')
-    author = models.ForeignKey('books.Author', on_delete=models.CASCADE, related_name='books')
+    uploader = models.ForeignKey('users.Profile', on_delete=models.SET_NULL, null=True, blank=True,
+                                 related_name='books')
+    category = models.ForeignKey('books.Category', on_delete=models.SET_NULL, null=True, blank=True,
+                                 related_name='books')
+    author = models.ForeignKey('books.Author', on_delete=models.CASCADE, related_name='books', null=True, blank=True)
+    author_name = models.CharField(max_length=100, null=False, default='N/A')
 
     def __str__(self):
         return self.title + " - " + self.author.name

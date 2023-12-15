@@ -4,7 +4,7 @@
 
 This is the repository which holds the code for the DigitalBookHub, a CRUD application for a public digital e-library system.
 
-![Web application user interface](/assets/UI.png)
+![Web application user interface](/assets/UI.jpeg)
 
 
 Features:
