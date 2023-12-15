@@ -60,16 +60,16 @@ const Navbar = () => {
         </Link>
       </div>
       <div>
-        <h1 class="text-[#A00000] font-serif text-4xl">
+        <h1 className="text-[#A00000] font-serif text-4xl">
           DigitalBookHub: Public e-library 📕
         </h1>
       </div>
       <ul className="navbar-links" ref={menuRef}>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/login">Upload</Link>
         </li>
         <li>
-          <Link to="/services">Services</Link>
+          <Link to="/services">About</Link>
         </li>
         <li>
           <Link to="/contact">Contact</Link>
