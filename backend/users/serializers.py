@@ -1,12 +1,13 @@
 from django.contrib.auth.models import User
 from rest_framework import serializers
 from .models import Profile
+from books.serializers import BookSerializer
 
 
 class ProfileSerializer(serializers.ModelSerializer):
 
     user = serializers.HyperlinkedRelatedField(read_only=True, many=False, view_name='user-detail')
-    books = serializers.HyperlinkedRelatedField(read_only=True, many=True, view_name='book-detail')
+    books = BookSerializer(many=True, read_only=True)
 
     class Meta:
         model = Profile
