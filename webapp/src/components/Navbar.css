@@ -6,6 +6,9 @@
   padding: 0 20px;
   background-color: #bbbbbb;
   color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .navbar-logo {
