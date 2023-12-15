@@ -70,4 +70,4 @@ class Book(models.Model):
     author_name = models.CharField(max_length=100, null=False, default='N/A')
 
     def __str__(self):
-        return self.title + " - " + self.author.name
+        return self.title
